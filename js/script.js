@@ -6,16 +6,16 @@ let ImgFound = 0;
 let Source = "#boxcard";
 
 let ImgSource = [
-  "img/1.png",
-  "img/2.png",
-  "img/3.png",
-  "img/4.png",
-  "img/5.png",
-  "img/6.png",
-  "img/7.png",
-  "img/8.png",
-  "img/9.png",
-  "img/10.png",
+  "https://coddyjs.github.io/img/1.png",
+  "https://coddyjs.github.io/img/2.png",
+  "https://coddyjs.github.io/img/3.png",
+  "https://coddyjs.github.io/img/4.png",
+  "https://coddyjs.github.io/img/5.png",
+  "https://coddyjs.github.io/img/6.png",
+  "https://coddyjs.github.io/img/7.png",
+  "https://coddyjs.github.io/img/8.png",
+  "https://coddyjs.github.io/img/9.png",
+  "https://coddyjs.github.io/img/10.png",
 ];
 
 function RandomFunction(MaxValue, MinValue) {
@@ -103,7 +103,7 @@ $(function() {
 
 	for (let y = 1; y < 3; y++) {
 		$.each(ImgSource, function(i, val){
-			$(Source).append("<div id=card" + y + i + "><img src = "+ val +"/>");
+			$(Source).append("<div id=card" + y + i + "><img src = "+ val +">");
 		});
 	}
 	$(Source + " div").click(OpenCard);
